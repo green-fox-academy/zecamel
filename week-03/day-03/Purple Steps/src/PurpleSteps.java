@@ -7,9 +7,6 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 public class PurpleSteps {
 
     public static void mainDraw(Graphics graphics){
-        // reproduce this:
-        // [https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/drawing/purple-steps/r3.png]
-
 
         int nrofsq = 20;
         int size = WIDTH/nrofsq;
@@ -19,23 +16,13 @@ public class PurpleSteps {
         for (int i = 0; i <nrofsq ; i++) {
             graphics.setColor(purple);
             graphics.fillRect( i*size,i*size,size,size );
-
-
         }
-
-
         for (int i = 0; i <nrofsq ; i++) {
             graphics.setColor( Color.black );
             graphics.drawRect( i*size,i*size,size,size );
 
         }
-
-
-
-
     }
-
-    //    Don't touch the code below
     static int WIDTH = 320;
     static int HEIGHT = 343;
 
@@ -55,5 +42,4 @@ public class PurpleSteps {
 
         }
     }
-
 }

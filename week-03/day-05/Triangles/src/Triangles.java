@@ -1,39 +1,28 @@
-import org.w3c.dom.css.RGBColor;
-
 import javax.swing.*;
-
 import java.awt.*;
-import java.util.Random;
-
-import static java.awt.image.ImageObserver.HEIGHT;
-import static java.awt.image.ImageObserver.WIDTH;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class RainbowBoxes {
-
+public class Triangles {
+    public static int steps =3;
     public static void mainDraw(Graphics graphics) {
 
-        drawing( 30, graphics ); // increase size and increase window size for epilepsy generator.
+        graphics.drawLine(0,0, WIDTH, 0 );
+        graphics.drawLine( WIDTH, 0, WIDTH / 2, HEIGHT-23 );
+        graphics.drawLine( WIDTH / 2, HEIGHT-23, 0, 0 );
+
 
     }
 
-        public static void drawing (int size, Graphics graphics){
-
-
-
-
-            for (int i = 0; i < size; i++) {
-                for (int j = 0; j < size; j++) {
-                graphics.setColor( new Color( (int) (Math.random()*255),  (int) (Math.random()*255),  (int) (Math.random()*255)) );
-                graphics.fillRect(i*WIDTH/size,j*HEIGHT/size, WIDTH/size,HEIGHT/size);
-
-            }
-
-        }
+    public static void secondDraw(Graphics graphics) {
 
     }
 
-    //    Don't touch the code below
+
+
+
+
+
+
     static int WIDTH = 320;
     static int HEIGHT = 343;
 
@@ -53,5 +42,6 @@ public class RainbowBoxes {
 
         }
     }
-
 }
+
+
