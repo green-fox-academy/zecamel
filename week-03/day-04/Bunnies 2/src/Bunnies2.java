@@ -1,7 +1,7 @@
 public class Bunnies2 {
     public static void main(String[] args) {
 
-        int bunnies = 8;
+        int bunnies = 5;
         System.out.println( ears( bunnies ) );
     }
 

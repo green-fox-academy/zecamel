@@ -7,13 +7,13 @@ public class SquareGrid {
     public static void mainDraw(Graphics graphics) {
         int x = 150;
         int y = 150;
-        int size = 200;
+        int size = 400;
         secondDraw(graphics, x, y, size );
 
     }
     private static void secondDraw(Graphics graphics, int x, int y, int size) {
         Graphics2D graphics2D = (Graphics2D) graphics;
-        graphics2D.setStroke( new BasicStroke( size/10 ) );
+        graphics2D.setStroke( new BasicStroke( size/15 ) );
         graphics.setColor( new Color( (int) (Math.random() * 255), (int) (Math.random() * 255),
                 (int) (Math.random() * 255) ) );
         graphics.drawRect( x, y, size, size );
@@ -26,10 +26,8 @@ public class SquareGrid {
     }
 
 
-
-
-    static int WIDTH = 320;
-    static int HEIGHT = 343;
+    static int WIDTH = 1000;
+    static int HEIGHT = 1000;
 
     public static void main(String[] args) {
         JFrame jFrame = new JFrame( "Drawing" );

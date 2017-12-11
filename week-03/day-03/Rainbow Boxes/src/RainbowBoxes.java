@@ -13,7 +13,7 @@ public class RainbowBoxes {
 
     public static void mainDraw(Graphics graphics) {
 
-        drawing( 30, graphics ); // increase size and increase window size for epilepsy generator.
+        drawing( 20, graphics ); // increase size and increase window size for epilepsy generator.
 
     }
 
